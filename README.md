@@ -1,4 +1,4 @@
-# PigHub Random API
+# 随机猪猪 API
 
 随机猪图 API，部署在 Vercel 上。
 

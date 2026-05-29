@@ -1,12 +1,14 @@
+import './globals.css'
+
 export const metadata = {
-  title: 'PigHub Random API',
-  description: '随机猪图 API - 部署在 Vercel',
+  title: '随机猪猪 API',
+  description: '随机猪猪 API - 部署在 Vercel',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="zh-CN">
-      <body style={{ margin: 0, fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <html lang="zh-CN" className="scroll-smooth">
+      <body className="min-h-screen antialiased">
         {children}
       </body>
     </html>

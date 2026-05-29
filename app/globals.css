@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Light mode variables */
+:root {
+  --color-bg-primary: #fafafa;
+  --color-bg-secondary: #f5f5f5;
+  --color-bg-code: #1a1a1a;
+  --color-text-primary: #171717;
+  --color-text-secondary: #525252;
+  --color-text-tertiary: #a3a3a3;
+  --color-border-default: #e5e5e5;
+  --color-border-hover: #d4d4d4;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-success: #10b981;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #0a0a0a;
+    --color-bg-secondary: #171717;
+    --color-bg-code: #111111;
+    --color-text-primary: #fafafa;
+    --color-text-secondary: #a3a3a3;
+    --color-text-tertiary: #737373;
+    --color-border-default: #262626;
+    --color-border-hover: #404040;
+    --color-accent: #3b82f6;
+    --color-accent-hover: #60a5fa;
+    --color-success: #34d399;
+  }
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Code syntax highlighting colors */
+.code-keyword {
+  color: #c084fc;
+}
+
+.code-string {
+  color: #86efac;
+}
+
+.code-comment {
+  color: #6b7280;
+}
+
+.code-property {
+  color: #93c5fd;
+}
+
+.code-number {
+  color: #fbbf24;
+}
+
+@media (prefers-color-scheme: dark) {
+  .code-keyword {
+    color: #c084fc;
+  }
+
+  .code-string {
+    color: #86efac;
+  }
+
+  .code-comment {
+    color: #6b7280;
+  }
+
+  .code-property {
+    color: #93c5fd;
+  }
+
+  .code-number {
+    color: #fbbf24;
+  }
+}
